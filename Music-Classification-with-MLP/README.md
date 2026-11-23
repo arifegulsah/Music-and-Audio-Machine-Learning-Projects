@@ -1,4 +1,4 @@
-# Music-Classification
+# Music-Classification-with-MLP
 Classification of music genres using librosa and Keras
 
 [Koda açıklamalar ile beraber erişmek için](MusicGenreClassification.ipynb)
@@ -16,7 +16,7 @@ Bu projede [GTZAN veri setini](https://www.kaggle.com/datasets/andradaolteanu/gt
 Veri seti boyutu nedeniyle repoya eklenmemiştir. Kodu çalıştırmak isterseniz veri setini Kaggle'dan indirip `Data/genres_original` klasörünü bu klasörün içine `genres` adıyla koymanız yeterli:
 
 ```
-Music-Classification/
+Music-Classification-with-MLP/
 └── genres/
     ├── blues/
     ├── classical/
