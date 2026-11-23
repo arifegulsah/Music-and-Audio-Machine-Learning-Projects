@@ -26,5 +26,5 @@ The Music-Classification-with-MLP project uses the [GTZAN dataset](https://www.k
 This repository was created by merging three previously separate repositories, with their full commit histories preserved:
 
 - **Audio-Feature-Extraction:** May 4, 2022 – May 18, 2022
-- **Music-Classification** (now Music-Classification-with-MLP)**:** May 4, 2022 – May 19, 2022
+- **Music-Classification-with-MLP:** May 4, 2022 – May 19, 2022
 - **Music-Generation-with-LSTM:** May 9, 2022 – May 18, 2022
