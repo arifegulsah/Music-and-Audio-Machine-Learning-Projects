@@ -13,14 +13,14 @@ Herhangi bir sesin iletilmek veya saklanmak için elektromanyetik enerjiye çevr
 
 Yani bir ses verisini incelediğimiz zaman şunu görebilmekteyiz ki; bu veriler özünde koordinat düzleminde **“zaman, genlik ve frekansın”** temsil edildiği 3 boyutlu sinyallerden başka bir şey değildir. 
 
-![representative_image](/images/representative.png)
+![representative_image](images/representative.png)
 
 
 
 ## LIBROSA’YA GİRİŞ 
 
 Bir ses sinyalinin özelliklerinin analizi ve üzerinde işlem yapılabilmesi için Python programlama dilinin sahip olduğu **Librosa** paketinden faydalanacağız.
-[audiofile](/audios) dosyasında üzerinde işlem yapabileceğiniz 10 farklı türde müzik dosyası bulunmaktadır.
+[audiofile](audios) dosyasında üzerinde işlem yapabileceğiniz 10 farklı türde müzik dosyası bulunmaktadır.
 Bu yazıdaki örnekler *blues* tipindeki müzik dosyası ile yapılmıştır. Siz diğer türleri de deneyerek karşılaştırma yapabilirsiniz.
 
 ```import librosa 
@@ -54,7 +54,7 @@ librosa.display.waveshow(x, sr=sr)
 
 `librosa.display.waveshow` ile ses dosyamdaki genliğin zamana bağlı değişimini yani dalga grafiğini resmedebildim. Aldığım çıktı şöyle olacaktır. 
 
-![waveplot1_image](/images/waveplot1.png)
+![waveplot1_image](images/waveplot1.png)
 
 ### Spektrogram
 Spektrogram, zamana göre değiştiği için bir sinyalin frekans spektrumunun görsel bir gösterimidir. Ses sinyallerimiz için spektrogram çizmek istediğimizde; 
@@ -70,7 +70,7 @@ plt.colorbar()
 
 `Librosa.display.specshow` ile de görselleştirme işlemini yaptık. Çıktım şu şekilde:  
 
-![SFTF1_image](/images/SFTF1.png)
+![SFTF1_image](images/SFTF1.png)
 
 # ÖZNİTELİK ÇIKARIMI TEKNİKLERİ
 
@@ -84,7 +84,7 @@ plt.figure(figsize=(14, 5))
 plt.plot(x[n0:n1]) 
 plt.grid() 
 ```
-![ZCR1_image](/images/ZCR1.png)
+![ZCR1_image](images/ZCR1.png)
 
 Zero Crossing Rate’i ölçebilmek için adından da anlaşılabileceği gibi grafiğin sıfır noktalarını kestiği yerleri saymalıyız. Bu grafik için sonuç 16dır. 
 Bu işlemi manuel yapmak istemiyorsak,  
@@ -113,7 +113,7 @@ def normalize(x, axis=0):
 librosa.display.waveplot(x, sr=sr, alpha=0.4) 
 plt.plot(t, normalize(spectral_centroids), color='r') 
 ```
-![SC1_image](/images/SC1.png)
+![SC1_image](images/SC1.png)
 
 ## MFCC — Mel-Frequency Cepstral Coefficients 
 
@@ -127,4 +127,4 @@ librosa.display.specshow(mfccs, sr=sr, x_axis='time')
 
 `librosa.feature.mfcc`, bir sinyalin mfcc'lerini hesaplamak için kullanılır. mfccs'nin şeklini yazdırarak, kaç karede kaç mfcc'nin hesaplandığını elde edersiniz. İlk değer, hesaplanan mfcc sayısını temsil eder ve başka bir değer, mevcut çerçevelerin sayısını temsil eder. 
 
-![MFCC1_image](/images/MFCC1.png)
+![MFCC1_image](images/MFCC1.png)
