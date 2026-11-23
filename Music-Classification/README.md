@@ -4,11 +4,11 @@
 <br>
 [Sadece koda erişmek için](wholeCode.py)
 
-## Veri seti
+## Dataset
 
-Bu proje [GTZAN veri setini](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification) kullanır (10 tür, her türden 100 adet 30 saniyelik ses dosyası). Veri seti boyutu nedeniyle repoya eklenmemiştir.
+This project uses the [GTZAN dataset](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification) (10 genres, 100 thirty-second audio clips per genre). Because of its size, the dataset is not included in this repository.
 
-Kodu çalıştırmak için veri setini Kaggle'dan indirip `Data/genres_original` klasörünü bu klasörün içine `genres` adıyla koyun:
+To run the code, download the dataset from Kaggle and place its `Data/genres_original` folder inside this folder, renamed to `genres`:
 
 ```
 Music-Classification/
